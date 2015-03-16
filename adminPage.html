@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html ng-app="stockApp" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Personen</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-2.1.3.js"></script>
+
+    <!-- <link href="Content/bootstrap-theme.css" rel="stylesheet" />-->
+</head>
+
+<body ng-controller="ang_persCtrl">
+
+    <div class="modal hide fade" id="myModal">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3>Modal header</h3>
+        </div>
+        <div class="modal-body">
+            <p>One fine body…</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="btn">Close</a>
+            <a href="#" class="btn btn-primary">Save changes</a>
+        </div>
+    </div> -
+
+    <div class="panel">
+        <div class="input-group">
+            <input class="form-control" ng-model="personId" />
+            <span class="input-group-btn"><button class="btn btn-default" ng-click="addPerson(personId)">Add Person</button></span>
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Age</th>
+               </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="person in persons.items" class="admin_pers_row">
+                    <td>{{person.id}}</td>
+                    <td><input ng-change="updatePerson({{person.id}})" ng-model-options="{updateOn: 'blur'}" type="number" ng-model="person.age" /></td>
+                    <td><a ng-click="delPerson(person.id)"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+            </tbody>
+        </table>
+
+    <p/>
+    <a class="btn btn-danger" href="userPage.html">User Page</a>
+
+
+    </div>
+
+    <script src="Scripts/angular.js"></script>
+    <script>
+        var model = {};
+        model.items = [];
+        var stockApp = angular.module("stockApp", []);
+
+        stockApp.controller("ang_persCtrl", function ($scope, $http) {
+            $scope.persons = model;
+
+            $scope.addPerson = function (id) {
+                var obj = { id: id, age: 0 };
+                model.items.push(obj);
+                $http.post('/api/person/', obj);
+                
+            };
+
+            $scope.updatePerson = function (id) {
+                var obj = $.grep(model.items, function (e) { return e.Id == id; })[0];
+                //model.items.push(obj);
+                $http.put('/api/person/' + id, obj);
+            };
+
+            $scope.delPerson = function (id) {
+                $http.delete('/api/person/' + id).success(function () {
+                    $scope.getPerson();
+                });
+            };
+
+
+            $scope.getPerson = function () {
+                $http.get('/api/person').success(function (data) {
+                    model.items = data;
+                });
+            };
+
+
+            $scope.getPerson();
+        });
+
+        $(function () {
+            $(document).on('click', ".admin_pers_row", function () {
+                alert('adminclick');
+                $('#myModal').modal('toggle');
+            });
+
+
+        });
+    </script>
+</body>
+</html>

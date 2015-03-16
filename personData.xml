@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Person>
+    <id>1</id>
+    <age>4</age>
+  </Person>
+  <Person>
+    <id>3</id>
+    <age>0</age>
+  </Person>
+  <Person>
+    <id>123</id>
+    <age>0</age>
+  </Person>
+  <Person>
+    <id>6</id>
+    <age>0</age>
+  </Person>
+  <Person>
+    <id>4</id>
+    <age>0</age>
+  </Person>
+  <Person>
+    <id>9</id>
+    <age>0</age>
+  </Person>
+</ArrayOfPerson>

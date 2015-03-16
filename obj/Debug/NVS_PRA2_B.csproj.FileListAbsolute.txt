@@ -1,0 +1,17 @@
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\NVS_PRA2_B.dll.config
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\NVS_PRA2_B.dll
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\NVS_PRA2_B.pdb
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\Newtonsoft.Json.dll
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\System.Net.Http.Formatting.dll
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\System.Web.Http.dll
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\System.Web.Http.WebHost.dll
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\Newtonsoft.Json.xml
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\System.Net.Http.Formatting.xml
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\System.Web.Http.xml
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\System.Web.Http.WebHost.xml
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\de\System.Net.Http.Formatting.resources.dll
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\de\System.Web.Http.resources.dll
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\bin\de\System.Web.Http.WebHost.resources.dll
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\obj\Debug\NVS_PRA2_B.csprojResolveAssemblyReference.cache
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\obj\Debug\NVS_PRA2_B.dll
+c:\users\lazerboss\documents\visual studio 2013\Projects\NVS_PRA2_B\NVS_PRA2_B\obj\Debug\NVS_PRA2_B.pdb
